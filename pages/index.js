@@ -3,9 +3,15 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import Head from "next/head";
 //import Image from "next/image";
 
-const APP_ROUTE = "https://www.mintables.club"
+const APP_ROUTE = "https://app.mintables.club"
 
 export default function Home() {
+  if (typeof window !== "undefined") {
+    // Client-side-only code
+    if (window.location.pathname !== "/") {
+      window.location.href = APP_ROUTE + window.location.pathname
+    }
+  }
   return (
     <div>
       <Head>

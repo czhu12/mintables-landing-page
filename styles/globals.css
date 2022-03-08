@@ -65,3 +65,6 @@ a {
   font-size: 24px !important;
   font-weight: bold;
 }
+.w-90 {
+  width: 90%;
+}

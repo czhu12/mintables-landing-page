@@ -1,5 +1,4 @@
-import '../styles/overrides.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/overrides.scss'
 import '../styles/globals.css'
 import '../styles/app.scss'
 

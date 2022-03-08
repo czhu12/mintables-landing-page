@@ -1,6 +1,7 @@
 import {Container, Row, Col, Button, Image} from "react-bootstrap";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import Head from "next/head";
+import { APP_ROUTE } from "./404";
 //import Image from "next/image";
 
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
               <Col>
               </Col>
             </Row>
-            <div className="pt-5 my-5">
+            <div className="pt-2 my-5">
               <div className="display-4 mb-4 font-weight-bold">
                 <RoughNotationGroup show={true}>
                   <RoughNotation type="underline" strokeWidth={6} color="#8f5fe8">
@@ -70,7 +71,7 @@ export default function Home() {
                 <Image src="/landing_page/editor-with-preview.png" className="w-75 light-shadow" />
               </div>
             </div>
-            <div className="pt-5 my-5">
+            <div className="pt-2 my-5">
               <div className="display-4 mb-4 font-weight-bold">
                 <RoughNotationGroup show={true}>
                   <RoughNotation type="underline" strokeWidth={6} color="#00d25b">
@@ -85,7 +86,7 @@ export default function Home() {
                 <Image src="/landing_page/deployment-main.png" className="w-75 light-shadow" />
               </div>
             </div>
-            <div className="pt-5 my-5">
+            <div className="pt-2 my-5">
               <div className="display-4 mb-4 font-weight-bold">
                 <RoughNotationGroup show={true}>
                   <RoughNotation type="underline" strokeWidth={6} color="#fc424a">

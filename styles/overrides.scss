@@ -1,3 +1,6 @@
+$theme-colors: (
+  "info": #8f5fe8,
+);
 :root {
   --gray: #6c757d;
   --gray-dark: #12151e;
@@ -31,3 +34,5 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
 }
+
+@import 'bootstrap/scss/bootstrap'

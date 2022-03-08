@@ -1,4 +1,4 @@
-const APP_ROUTE = "https://app.mintables.club"
+export const APP_ROUTE = "https://app.mintables.club"
 
 const Redirect = () => {
   if (typeof window !== "undefined") {

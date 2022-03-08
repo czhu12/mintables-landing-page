@@ -65,7 +65,7 @@ export default function Home() {
                     </RoughNotation> your collection in our NFT studio.
                   </RoughNotationGroup>
                 </div>
-                <div className="my-4 display-5">
+                <div className="my-4 display-6">
                   Upload your artwork, and our software will generate unique NFT&apos;s for you.
                 </div>
                 <div>
@@ -80,7 +80,7 @@ export default function Home() {
                     </RoughNotation> a smart contract, directly through the app.
                   </RoughNotationGroup>
                 </div>
-                <div className="my-4 display-5">
+                <div className="my-4 display-6">
                   Deploying smart contracts take forever. Mintables will automatically create a smart contract for your project.
                 </div>
                 <div>
@@ -95,7 +95,7 @@ export default function Home() {
                     </RoughNotation> your NFT&apos;s directly through Mintables.
                   </RoughNotationGroup>
                 </div>
-                <div className="my-4 display-5">
+                <div className="my-4 display-6">
                   You can download your generated NFT&apos;s, or your fans can use our pre-built and customizable minting pages to mint NFT&apos;s.
                 </div>
                 <div>

@@ -1,10 +1,19 @@
-import {Container, Row, Col, Button, Image} from "react-bootstrap";
+import {Container, Row, Col, Button, Image, Card} from "react-bootstrap";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import Head from "next/head";
 import { APP_ROUTE } from "./404";
+import axios from "axios";
 //import Image from "next/image";
 
-export default function Home() {
+export async function getStaticProps(context) {
+  const response = await axios.get("https://backend.mintables.club/marketplaces")
+  return {
+    props: { data: response.data }, // will be passed to the page component as props
+  }
+}
+
+export default function Home({data}) {
+  const marketplaces = data.results;
   return (
     <div>
       <Head>
@@ -52,9 +61,20 @@ export default function Home() {
               </Col>
             </Row>
 
+            <div className="my-2 display-2 font-weight-bold">See our collections</div>
             <Row>
-              <Col>
-              </Col>
+              {marketplaces.map((marketplace) => {
+                return (
+                  <Col key={marketplace.id} className="my-2" md={2} lg={3}>
+                    <a href={`${APP_ROUTE}/m/${marketplace.slug}`} className="link-unstyled">
+                      <Card className="p-2 marketplace-preview">
+                        <Image src={marketplace.preview_nft.image_url} fluid />
+                        <div>{marketplace.name.substr(0, 20)} {marketplace.name.length > 20 && "..."}</div>
+                      </Card>
+                    </a>
+                  </Col>
+                );
+              })}
             </Row>
             <div className="w-90">
               <div className="pt-2 my-5">

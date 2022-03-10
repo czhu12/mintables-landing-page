@@ -68,3 +68,19 @@ a {
 .w-90 {
   width: 90%;
 }
+
+.marketplace-preview img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.marketplace-preview {
+  background-color: rgb(25, 28, 36);
+}
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
